@@ -13,11 +13,10 @@ def main():
         if evalDistance(queenX, queenY, dogX, dogY):
             farDogList.append(i)
 
-    print(farDogList)
     if farDogList:
         for j in range(len(farDogList)):
             if j == len(farDogList) - 1:
-                lastStr += "Puppy " + str(farDogList[j]) + " is too far."
+                lastStr += "Puppy " + str(farDogList[j]) + " too far."
             else:
                 lastStr += "Puppy " + str(farDogList[j]) + " and "
         print(lastStr)
